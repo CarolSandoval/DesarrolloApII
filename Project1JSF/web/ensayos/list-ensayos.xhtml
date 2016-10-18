@@ -5,12 +5,12 @@
       xmlns:p="http://primefaces.org/ui"
       xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
     <h:head>
-        <title>#{str.ensayoFormHeader}</title>
+        <title>#{str.enssayFormHeader}</title>
     </h:head>
     <h:body>
         <ui:composition template="/templates/template.xhtml">
             <ui:define name="contenido">
-                <h1>#{str.ensayoListTitle}</h1>
+                <h1>#{str.enssayListTitle}</h1>
                 <h:form>
                     <p:commandButton value="#{str.buttonAdd}"
                                      action="#{ensayoBean.iniciar()}"></p:commandButton>
@@ -22,22 +22,22 @@
                                               action="#{ensayoBean.editar(e)}"></p:commandButton>
                                  </h:form>
                     </p:column>
-                             <p:column headerText="#{str.ensayoNameHeader}">
+                    <p:column headerText="#{str.enssayHeader}">
                                  <p:outputLabel value="#{e.nombreEnsayo}"></p:outputLabel>
                     </p:column>
                     
-                             <p:column headerText="#{str.alumnoNameHeader}">
+                    <p:column headerText="#{str.studentNameHeader}">
                                  <p:outputLabel value="#{e.alumno.nombre}"></p:outputLabel>
                     </p:column>
                     
                     
-                        <p:column headerText="#{str.fechaNameHeader}">
+                    <p:column headerText="#{str.dateHeader}">
                                  <p:outputLabel value="#{e.fecha}"></p:outputLabel>
                     </p:column>
                     
                     
                     
-                    <p:column headerText="#{str.calificacionNameHeader}">
+                    <p:column headerText="#{str.calificationHeader}">
                                  <p:outputLabel value="#{e.calificacion}"></p:outputLabel>
                     </p:column>
                     

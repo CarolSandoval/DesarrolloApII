@@ -5,32 +5,32 @@
       xmlns:p="http://primefaces.org/ui"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
     <h:head>
-        <title>#{str.alumnoFormTitle}</title>
+        <title>#{str.studentFormHeader}</title>
     </h:head>
     <h:body>
         <ui:composition template="/templates/template.xhtml">
             <ui:define name="contenido">
                 <h2>#{str.formHeader}</h2>
-                <p:fieldset legend="#{str.alumnoLegendForm}">
+                <p:fieldset legend="#{str.studentLegendForm}">
                     <h:form>
  
-                        <p:inputText placeholder="#{str.alumnoNamePrompt}"
+                        <p:inputText placeholder="#{str.studentPrompt}"
                                      value="#{alumnoBean.alumno.nombre}"></p:inputText>
                                      
                                      
                                      
-                                     <p:inputText placeholder="#{str.apellidoNamePrompt}"
+                                     <p:inputText placeholder="#{str.lastNamePrompt}"
                                                   value="#{alumnoBean.alumno.apellido}"></p:inputText>
                                                   
                                                   
                                                   
                                                   
-                                                  <p:inputText placeholder="#{str.direccionNamePrompt}"
+                                                  <p:inputText placeholder="#{str.adressNamePrompt}"
                                                   value="#{alumnoBean.alumno.direccion}"></p:inputText>
                                                   
                                                   
                                                   
-                                     <p:inputText placeholder="#{str.telefonoNamePrompt}"
+                                                  <p:inputText placeholder="#{str.celphonePrompt}"
                                                   value="#{alumnoBean.alumno.telefono}"></p:inputText>
                         
                         <p:commandButton value="#{str.buttonSave}"
