@@ -29,7 +29,7 @@
 		<c:when test="${mode=='MODE_HOME_SELLER'}">
 			<div class="container">
 				<div class="jumbotron text-center" id="homeDiv">
-					<h1>Welcome to Task Manager</h1>
+					<h1>Welcome to Seller Manager</h1>
 				</div>
 			</div>
 		</c:when>
